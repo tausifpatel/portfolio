@@ -1,0 +1,37 @@
+@import 'layout.scss';
+
+.others {
+    margin-top: 8rem;
+     padding: 10rem 0;
+     background-color: #f0faf1;
+
+    &__links {
+        color: $color-light-grey;
+        font-family: 'Monument Extended Regular';
+        font-size: 2.2rem;
+
+        display: flex;
+        @media only screen and (max-width: 690px){
+            flex-direction: column;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-light-grey;
+        margin-right: 2.5rem;
+    }
+
+    &__title-small {
+        font-family:"Telegraf Ultrabold";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+        margin: 2rem 0;
+        color: #ff520e;
+    }
+}
+
+.active {
+    color: #000000;
+}

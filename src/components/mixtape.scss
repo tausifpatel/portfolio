@@ -1,0 +1,75 @@
+@import './layout.scss';
+
+.mixtape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+
+    @media only screen and (max-width: 450px) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    &__image {
+        width: 50rem;
+        height: auto;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width: 450px) {
+            width: 30rem;
+        }
+    }
+
+    &__title {
+        font-family: "SpaceMono-Bold";
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width: 620px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__text {
+        font-family: "SpaceMono-Regular"; 
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        color: #000000;
+
+        @media only screen and (max-width: 620px) {
+            font-size: 1.8rem;
+            letter-spacing: 0px;
+        }
+
+        @media only screen and (max-width: 520px) {
+            font-size: 1.5rem;
+            letter-spacing: 0px;
+        }
+    }
+
+    &__link {
+        font-family: "SpaceMono-Regular";
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        display: inline-block;
+        padding: 10px 20px 10px 20px;
+        border: 2px solid $color-black;
+
+        &:hover {
+            color: $color-green-bright;
+            border: 2px solid $color-green-bright;
+        }
+
+        @media only screen and (max-width: 620px) {
+            font-size: 1.2rem;
+        }
+    }
+}

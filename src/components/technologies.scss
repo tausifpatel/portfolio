@@ -1,0 +1,60 @@
+@import 'layout.scss';
+
+.tech {
+    padding: 10rem 0;
+    color: $color-black;
+    background-color: $color-blue-faded;
+    font-size: 1.8rem;
+    line-height: 160%;
+
+    &__content {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title-small {
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        font-size: 1.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__title {
+        @include title;
+        color: #000;
+
+        @media only screen and (max-width: 565px){
+            font-size: 2rem;
+        }
+        @media only screen and (max-width: 460px){
+            font-size: 1.8rem;
+        }
+    }
+
+    &__logos {
+        margin-bottom: 10rem;
+        display: flex;
+    }
+
+    &__logo {
+        margin: 0 2rem;
+        height: 7rem;
+        width: auto;
+        fill: $color-black;
+
+        @media only screen and (max-width:500px) {
+            margin: 0 1rem;
+        }
+    }
+
+    &__text {
+        margin-bottom: 1.5rem;
+    }
+
+    &__text-img {
+        height: 1.2em;
+        vertical-align: text-bottom;
+        margin: 0px;
+    }
+}

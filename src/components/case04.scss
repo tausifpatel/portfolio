@@ -1,0 +1,61 @@
+@import 'layout.scss';
+
+.case04 {
+    background-color:#202020;
+    font-size: 1.8rem;
+    line-height: 180%;
+
+    &__img-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        margin: 5rem 0;
+        height: 100%;
+        width: 600px;
+
+        @media only screen and (max-width: 650px){
+            width: 100%;
+            padding: 10px;
+        }     
+    }
+
+    &__head {
+        background-color: #000000;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        @include title;
+        font-size: 5.5rem;
+        color: #ffffff;
+        text-align: center;
+
+    
+        @media only screen and (max-width: 880px){
+            font-size: 4rem;
+        }
+    }
+
+    &__title-small {
+        font-family:"Telegraf Ultrabold";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.6rem;
+        margin: 2rem 0;
+
+    }
+
+    &__text {
+        color: #b1b1b1;;
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+}

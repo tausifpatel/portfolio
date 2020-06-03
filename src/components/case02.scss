@@ -1,0 +1,69 @@
+@import 'layout.scss';
+
+.case02 {
+    font-size: 1.8rem;
+    line-height: 180%;
+
+    .case01__title-small {
+        margin-top: 5rem;
+    }
+
+    &__head {
+        background-color: #000000;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    &__title {
+        @include title;
+        font-size: 5.5rem;
+        color: #ffffff;
+        text-align: center;
+    
+        @media only screen and (max-width: 880px){
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: 375px){
+            font-size: 3rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        margin-top: 3rem;
+
+        @media only screen and (max-width: 550px){
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: 460px){
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: 375px){
+            font-size: 1.8rem;
+        }
+    }
+
+    &__num{
+        font-family: "Monument Extended Regular";
+        font-size: 4rem;
+        color: #ebeff5;
+        margin: 5rem 0;
+
+        @media only screen and (max-width: 550px){
+            font-size: 2.5rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+
+}

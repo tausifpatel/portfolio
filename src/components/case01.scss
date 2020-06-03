@@ -1,0 +1,130 @@
+@import 'layout.scss';
+
+.case01 {
+    font-size: 1.8rem;
+    line-height: 180%;
+
+    &__header-img {
+        width: 100%;
+        height: auto;
+
+        background-position: 25% 55%; 
+    }
+
+    &__title {
+        @include title;
+        font-size: 5.5rem;
+        margin: 7rem 0;
+ 
+        @media only screen and (max-width: 880px){
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: 400px){
+            font-size: 3rem;
+        }
+    }
+
+    &__title-small {
+        font-family:"Telegraf Ultrabold";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.6rem;
+        margin: 2rem 0;
+    }
+
+    &__title-medium {
+        @include title;
+        font-size: 4rem;
+        margin: 8rem 0 4rem 0;
+        
+        @media only screen and (max-width: 400px){
+            font-size: 3rem;
+        }
+    }
+
+    &__text {
+        margin-bottom: 3rem;
+    }
+
+    &__margin {
+        margin: 5rem 0;
+    }
+
+    &__coltext {
+        padding-top: 3rem;
+        border-top: 1px solid #d4dbe4;
+        margin-bottom: 10rem;
+    }
+
+    &__coltextbox {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 980px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .block {
+            width: 30rem;
+            height: 20rem;
+            margin: 4rem 0 2.5rem 0;
+            margin-right: 2rem;
+        }
+        
+        .gold {
+            background-color: $gold;
+        }
+
+        .blue {
+            background-color: $blue;
+        }
+
+        .texture {
+            background-image: url('../images/project01/sb-texture.jpg');
+        }
+    }
+
+    &__typography {
+        padding-top: 3rem;
+        border-top: 1px solid #d4dbe4;
+        border-bottom: 1px solid #d4dbe4;
+    }
+
+    &__typography-large {
+        font-family: Montserrat;
+        font-size: 10rem;
+        margin: 8rem 0;
+    }
+
+    &__typography-small {
+        font-family: Montserrat;
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 150%;
+        letter-spacing: 2px;
+        margin: 8rem 0;
+    }
+
+    .ux-image {
+        width: 60rem;
+        margin: 0 auto 3rem auto;
+
+        @media only screen and (max-width: 635px) {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .wireframe {
+        width: 100%;
+        height: auto;
+        margin: 7rem 0;
+    }
+
+    a {
+        color: inherit;
+    }
+}

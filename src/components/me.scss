@@ -1,0 +1,91 @@
+@import 'layout.scss';
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+    @media only screen and (max-width: 994px){
+        flex-direction: column;
+    }
+}
+
+.me {
+    color: $color-black;
+    
+
+    &__title {
+        padding: 12rem 0;
+        font-family: "Monument Extended Regular";
+        font-size: 8rem;
+
+
+        @media only screen and (max-width:470px){
+            padding: 6rem 0;
+            font-size: 3rem;
+        }
+    }
+
+    &__textbox {
+        font-family: "Telegraf Regular";
+        font-size: 2rem;
+        line-height: 160%;
+
+        &-text {
+            margin-bottom: 3rem;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $color-black;
+            border-bottom: 1px solid $color-light-grey;
+            padding-bottom: 3px;
+        }
+
+        &-text-loud {
+            font-family: "Telegraf Ultrabold";
+            font-size: 2.8rem;
+            line-height: 150%;
+            margin: 4rem 0;
+        }
+
+        .blue {
+            color: $color-blue-bright;
+        }
+
+        .margin-top {
+            margin-top: 6rem;
+        }
+
+        @media only screen and (max-width: 600px){
+            margin-top: 5rem;
+        }
+
+        @media only screen and (max-width: 620px){
+            font-size: 1.8rem;
+        }
+    }
+
+    &__image {
+        max-width: 500px;
+        height: auto;    
+        
+        @media only screen and (max-width: 600px){
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.col {
+    padding: 3rem;
+
+    @media only screen and (max-width: 530px){
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 994px){
+    .picture { order: 1;}
+    .text {order: 2;}
+}
+

@@ -1,0 +1,105 @@
+@import 'layout.scss';
+
+.wrapper-blue {
+    background-color: #f1f8ff;
+}
+
+.design2 {
+    margin: 20rem 0;
+    padding: 8rem 0;
+    color: $color-arsenic;
+
+    font-family: "Telegraf Regular"; 
+    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 180%;
+
+    display: flex;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 800px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+    &__img {
+        width: 50rem;
+        transition: .2s;
+        border-radius: 10px;
+
+        @media only screen and (max-width: 600px){
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__img:hover {
+        transform: scale(1.01);
+    }
+
+    &__textarea {
+        margin-top: 18rem;
+        width: 45rem;
+
+        @media only screen and (max-width: 800px) {
+            order: 2;
+            width: auto;
+        }
+    }
+
+    &__title {
+        @include title;
+        color: #0e4bff;
+        // font-family: "Formula Condensed Light";
+        margin-top: 4rem;
+        // @media only screen and (max-width: 565px){
+        //     font-size: 2rem;
+        // }
+        @media only screen and (max-width: 460px){
+            font-size: 3rem;
+        }
+    }
+
+    &__description {
+        margin-top: 3rem;  
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        margin-top: 3rem;
+        text-decoration: none;
+        // color: #99a1af;
+        color: #ffffff;;
+        display: inline-block;
+        transition: .3s;
+        padding: 5px 20px 2px 20px;
+        text-align: center;
+        background-color: #A6B8C9;
+        letter-spacing: 2px;
+        border: #A6B8C9 1px solid;
+        
+        font-family: "Formula Condensed Light";
+
+        &-git {
+            background-color: transparent;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-left: 15px;
+            color: black;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+
+    }
+
+    &__link:hover {
+        background-color: #064aff;
+        border: 1px solid #064aff;
+    }
+}

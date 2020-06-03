@@ -1,0 +1,65 @@
+@import 'layout.scss';
+
+.gallery {
+
+    &-wrap {
+        background-color: #f7f9fa;
+    }
+
+    color: #000000;
+
+    &__heading {
+        @include title;
+        text-align: center;
+        padding-top: 15rem; 
+
+        @media only screen and (max-width: 565px){
+            font-size: 2rem;
+        }
+        @media only screen and (max-width: 460px){
+            font-size: 1.8rem;
+        }
+    }
+  
+    &__subheading {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 3rem;
+        
+
+        @media only screen and (max-width: 565px){
+            font-size: 1.6rem;
+        }
+        @media only screen and (max-width: 460px){
+            font-size: 1.4rem;
+        }
+    }
+    
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        // grid-gap: 3rem;
+        padding: 15rem 0;
+
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    &__pic {
+        width: 60rem;
+        height: auto;
+
+        @media only screen and (max-width: 1200px){
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 560px){
+            width: 30rem;
+        }
+    }
+}

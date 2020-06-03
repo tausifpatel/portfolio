@@ -1,0 +1,40 @@
+@import 'layout.scss';
+
+.design {
+    margin: 10rem 0;
+    display: flex;
+
+    @media only screen and (max-width: 800px){
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    &__img {
+        width: 70rem;
+        height: auto;
+        transition: .2s;
+        border-radius: 10px;
+
+        @media only screen and (max-width: 990px){
+            width: 50rem;
+        }
+
+        @media only screen and (max-width: 800px){
+            max-width: 100%;
+            height: auto;
+         }
+    }
+
+    &__img:hover {
+        transform: scale(1.01);
+    }
+
+    &-margin {
+        margin-top: 25rem;
+
+        @media only screen and (max-width: 800px){
+            margin-top: 6rem;
+         }
+    }
+}

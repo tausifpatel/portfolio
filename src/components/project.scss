@@ -1,0 +1,51 @@
+@import 'layout.scss';
+
+.project {
+    padding: 8rem 0;
+    color: $color-black;
+
+    font-family: "Telegraf Regular"; 
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 180%;
+
+    &__title {
+        @include title;
+        color: $color-black;
+        margin-top: 4rem;
+        @media only screen and (max-width: 565px){
+            font-size: 3rem;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+        transition: .2s;
+        border-radius: 10px;
+    }
+
+    &__img:hover {
+        transform: scale(1.01);
+    }
+
+    &__description {
+        margin-top: 3rem;  
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        margin-top: 3rem;
+        margin-right: 15px;
+        color: $color-black;
+        display: inline-block;
+        transition: .3s;
+    }
+    
+    &__link:hover {
+        color: $color-blue-bright;
+    }
+}

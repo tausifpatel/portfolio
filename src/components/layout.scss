@@ -1,0 +1,150 @@
+/// Colours
+$color-dark-grey:   #110E17;
+$color-light-grey:  #8e969f;
+$color-black:       #000000;
+$color-white:       #ffffff;
+$color-blue-bright: #0063ff;
+$color-blue-faded:  #f7f9fa;
+$color-green-bright:#01f882;
+$color-arsenic:     #3d424a;
+$gold:              #e1c173;
+$blue:              #16171b;
+
+
+/// Mixins
+@mixin title() {
+    font-family: "Monument Extended Regular";
+    font-size: 4rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+@mixin line() {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    width: 5rem;
+    vertical-align: bottom;
+    margin-left: 1rem;
+    border-top: 3px solid;
+    border-color: inherit;
+    opacity: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/// Fonts
+@font-face {
+    font-family: "Monument Extended Ultrabold";
+    src: url("../fonts/MonumentExtended-Ultrabold.otf");
+  }
+
+@font-face {
+    font-family: "Monument Extended Regular";
+    src: url("../fonts/MonumentExtended-Regular.otf");
+  }
+
+@font-face {
+    font-family: "Telegraf Regular";
+    src: url("../Fonts/Telegraf-Regular.otf");
+}
+
+@font-face {
+    font-family: "Telegraf UltraLight";
+    src: url("../Fonts/Telegraf-UltraLight.otf");
+}
+
+@font-face {
+    font-family: "Telegraf UltraBold";
+    src: url("../Fonts/Telegraf-UltraBold.otf");
+}
+
+@font-face {
+    font-family: "SpaceMono-Regular";
+    src: url("../Fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SpaceMono-Bold";
+    src: url("../Fonts/SpaceMono-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Telegraf Regular"; 
+    line-height: 1.3;
+    color: $color-black;
+    overflow-x: none;
+}
+
+/// Containers
+.container {
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 990px){
+        max-width: 80rem;
+    }
+
+    @media only screen and (max-width: 650px){
+        max-width: 70rem;
+    }
+
+    @media only screen and (max-width: 565px){
+        max-width: 60rem;
+    }
+
+    @media only screen and (max-width: 480px){
+        max-width: 55rem;
+    }
+
+    @media only screen and (max-width: 460px) {
+        max-width: 50rem;
+    }
+
+    @media only screen and (max-width: 420px) {
+        max-width: 45rem;
+    }
+}
+
+.container-wide {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container-ultrawide {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+/// Main intermediate Headings - Projects, Design Projects, Mixtape
+.projects {
+    &__text {
+        margin-top: 20rem;
+        font-family: "SpaceMono-Regular";
+        color: $color-blue-bright;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        text-align: center;
+
+        @media only screen and (max-width: 420px) {
+            font-size: 2.5rem;
+        }   
+    } 
+}

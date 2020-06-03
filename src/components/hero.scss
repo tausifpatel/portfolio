@@ -1,0 +1,73 @@
+@import 'layout.scss';
+
+.hero-wrap {
+    background-color: $color-black;
+}
+
+
+.hero {
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 570px) {
+        margin-top: 15rem;
+        padding-top: 10rem;
+    }
+
+    &__text {
+        font-family: "Monument Extended Regular";
+        font-size: 5rem;
+        color: $color-white;
+        margin-bottom: 2rem;
+
+        &-name {
+            color: $color-blue-bright;
+        }
+        
+        span {
+            margin-top: 2rem;
+        }
+
+        @media only screen and (max-width: 665px) {
+            font-size: 5rem;
+        }
+
+        @media only screen and (max-width: 525px) {
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: 420px) {
+            font-size: 3rem;
+        }
+    }
+
+    &__link {
+
+    }
+
+    &__subtext {
+        font-family: SpaceMono-Regular;
+        font-size: 2rem;
+        color: $color-white;
+
+        margin-top: 20rem;
+        max-width: 60rem;
+        margin-left: auto;
+
+        &-link {
+            margin-top: 2rem;
+            font-size: 2rem;
+            color: $color-white;
+            text-decoration: none;
+            transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    
+            &:hover {
+                color: $color-blue-bright;
+            }
+        }
+    }
+}

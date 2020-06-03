@@ -1,0 +1,46 @@
+@import 'layout.scss';
+
+.footer {
+    padding: 15rem 0;
+
+    &-wrap {
+        background-color: $color-black;
+        display: flex;
+    }
+
+    &__email {
+        font-family: "SpaceMono-Regular";
+        color: $color-white;
+        font-size: 2rem;
+        line-height: 130%;
+        text-decoration: none;
+        color: $color-white;
+        transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        
+        &:hover {
+            color: $color-blue-bright;
+        }
+    }
+
+    &__logos {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        margin-right: 2rem;
+        height: 3rem;
+        width: 3rem;
+        fill: $color-white;
+        transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        
+        &:hover {
+            fill: $color-blue-bright;
+        }
+
+        @media only screen and (max-width:500px) {
+            margin: 0 1rem;
+        }
+    }
+}

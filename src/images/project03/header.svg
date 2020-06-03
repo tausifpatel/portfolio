@@ -1,0 +1,30 @@
+<svg width="2410" height="1113" viewBox="0 0 2410 1113" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect x="0.41626" y="1113" width="1112.42" height="2408.75" transform="rotate(-90 0.41626 1113)" fill="#F1F8FF"/>
+<rect x="957" y="614.421" width="614.542" height="495.396" transform="rotate(-90 957 614.421)" fill="#0766F4" fill-opacity="0.4"/>
+<rect x="1000.9" y="647.029" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1000.9 647.029)" fill="#F0F8FF"/>
+<rect x="1000.9" y="497.783" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1000.9 497.783)" fill="#F0F8FF"/>
+<rect x="1000.9" y="348.537" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1000.9 348.537)" fill="#F0F8FF"/>
+<rect x="1000.9" y="199.292" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1000.9 199.292)" fill="#F0F8FF"/>
+<rect x="1000.9" y="50.0455" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1000.9 50.0455)" fill="#F0F8FF"/>
+<rect x="1370.88" y="645.775" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1370.88 645.775)" fill="#F0F8FF"/>
+<rect x="1370.88" y="496.529" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1370.88 496.529)" fill="#F0F8FF"/>
+<rect x="1370.88" y="347.282" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1370.88 347.282)" fill="#F0F8FF"/>
+<rect x="1370.88" y="198.038" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1370.88 198.038)" fill="#F0F8FF"/>
+<rect x="1370.88" y="48.7917" width="87.7917" height="43.8958" rx="6.27084" transform="rotate(-90 1370.88 48.7917)" fill="#F0F8FF"/>
+<g filter="url(#filter0_b)">
+<rect x="0.41626" y="1113" width="1112.42" height="2408.75" transform="rotate(-90 0.41626 1113)" fill="#B1BEC6" fill-opacity="0.2"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_b" x="-58.9126" y="-58.745" width="2527.41" height="1231.07" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="29.6644"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+<clipPath id="clip0">
+<rect x="0.41626" y="1113" width="1112.42" height="2408.75" transform="rotate(-90 0.41626 1113)" fill="white"/>
+</clipPath>
+</defs>
+</svg>
